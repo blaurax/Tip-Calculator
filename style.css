@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    letter-spacing: 0.3px;
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    background-color: #fff;
+    height: 100%; 
+    background: linear-gradient(
+        85deg,
+         rgb(232, 181, 212),
+         rgb(210, 92, 122)
+    ) fixed;
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+}
+
+.container{
+    background-color: #fff;
+    width: 35%;
+    padding: 50px 50px;
+    border-radius: 8px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    box-shadow: 0 20px 40px rgba(89, 15, 34, 0.507);
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px 0px;
+}
+
+
+.lbl{
+    font-size: 20px;
+    color: rgb(36, 36, 36);
+    font-weight: 600;
+}
+
+
+.val{
+    font-size: 20px;
+    color: rgb(36, 36, 36);
+    font-weight: bold;
+}
+
+#input-box{
+    background-color: rgba(64, 64, 64, 0.507);
+    color: rgb(210, 92, 122);
+    padding: 5px;
+}
+
+#bill{
+    background-color:transparent;
+    border: none;
+    outline: none;
+    width: 100px;
+    text-align: center;
+    color: rgb(210, 92, 122);
+}
+
+
+hr{
+    border:none;
+    border-bottom: 1px  solid   rgb(210, 92, 122);
+}
+
+input[type="range"]{
+    width: 100%;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+input[type="range"]:not(:last-child){
+  margin-bottom:5px;
+
+}
+
+
+section:not(:last-child){
+    margin-bottom:  30px;
+}
+
+section:not(:first-child){
+    margin-top:  30px;
+}
+
+
+section:last-child{
+    background-color: rgb(210, 92, 122);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+section:last-child .val, section:last-child .lbl{
+    color: rgb(255, 255, 255);
+}
